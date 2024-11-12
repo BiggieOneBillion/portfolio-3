@@ -1,9 +1,8 @@
 import Herosection from "./herosection";
 import { TracingBeamSection } from "./timelines";
 
-type Props = {};
 
-const HomeComponent = (props: Props) => {
+const HomeComponent = () => {
   return (
     <>
       <Herosection />

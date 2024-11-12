@@ -1,10 +1,6 @@
-import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { contactFormSchema } from "./validation";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { span } from "framer-motion/client";
-
-type Props = {};
 
 type formData = {
   name: string;
@@ -12,7 +8,7 @@ type formData = {
   message: string;
 };
 
-const ContactForm = (props: Props) => {
+const ContactForm = () => {
   const {
     register,
     handleSubmit,

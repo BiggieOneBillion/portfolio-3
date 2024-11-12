@@ -1,11 +1,6 @@
-import React from "react";
-import { InfiniteMovingCards } from "../global/infinte-moving-cards";
-import { technology } from "../../lib/constant";
 import { SparklesPreview } from "../global/sparksbg";
 
-type Props = {};
-
-const Herosection = (props: Props) => {
+const Herosection = () => {
   return (
     <SparklesPreview />
     // <section className="min-h-[100vh] h-screen grid grid-cols-2 container mx-auto">

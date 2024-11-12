@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import type { Container, Engine } from '@tsparticles/engine'
+import type { Container } from '@tsparticles/engine'
 
 import { motion, useAnimation } from 'framer-motion'
 import { cn } from '../../lib/utils'
