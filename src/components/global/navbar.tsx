@@ -2,12 +2,17 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 // import { FaCircleArrowRight } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleIsOpen = () => setIsOpen(true);
   const handleIsClose = () => setIsOpen(false);
+  const navigate = useNavigate();
+  const handleNavigation = (location: string) => {
+    handleIsClose();
+    navigate(location);
+  };
   return (
     <header className="absolute top-0 w-full text-white z-[100000] py-5 text-sm">
       <main className="md:w-[700px] mx-auto flex items-center justify-between py-3 border px-5 rounded-2xl bg-zinc-900">
@@ -21,19 +26,19 @@ const Navbar = () => {
             {/* <li className="px-3 py-2 rounded-xl bg-whitey border border-transparent hover:border-white hover:bg-zinc-200y transition-colors duration-300">
               <a href="#">About Me</a>
             </li> */}
-            <Link
-              to={"/works"}
+            <button
+              onClick={() => handleNavigation("/works")}
               className="px-3 py-2 rounded-xl bg-whitey border border-transparent hover:border-white hover:bg-zinc-200y transition-colors duration-300"
             >
               My Projects
-            </Link>
+            </button>
             {/* <li className='px-3 py-2 rounded-xl bg-whitey border border-transparent hover:border-white hover:bg-zinc-200y transition-colors duration-300'><a href="#">Blog</a></li> */}
-            <Link
-              to={"/contact-me"}
+            <button
+              onClick={() => handleNavigation("/contact-me")}
               className="px-3 py-2 rounded-xl bg-whitey border border-transparent hover:border-white hover:bg-zinc-200y transition-colors duration-300"
             >
               Contact Me
-            </Link>
+            </button>
           </ul>
         </nav>
         {/* <button className="hidden md:block">Get In Touch</button> */}
@@ -56,11 +61,15 @@ const Navbar = () => {
               {/* side navigation */}
               <ul className="space-y-8">
                 <li className="text-lg text-right">
-                  <Link to={"/works"}>My Projects</Link>
+                  <button onClick={() => handleNavigation("/works")}>
+                    My Projects
+                  </button>
                 </li>
                 {/* <li className="text-lg text-right">Work</li> */}
                 <li className="text-lg text-right">
-                  <Link to={"/contact-me"}>Contact Me</Link>
+                  <button onClick={() => handleNavigation("/contact-me")}>
+                    Contact Me
+                  </button>
                 </li>
               </ul>
               {/* <button className="group relative z-[1000] transition-transform duration-300 rounded-2xl px-3 py-2 border w-fit cursor-pointer flex items-center gap-2">
