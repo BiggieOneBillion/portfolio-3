@@ -2,8 +2,10 @@ import { SparklesCore } from "./sparkles";
 import { InfiniteMovingCards } from "./infinte-moving-cards";
 import { technology } from "../../lib/constant";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 export function SparklesPreview() {
+  const navigate = useNavigate();
   return (
     <div className="h-[40rem]y h-fit relative w-full bg-black flex flex-col items-centery md:pl-[14rem] justify-center overflow-hidden">
       <div className="w-full absolute inset-0 h-screen">
@@ -29,7 +31,10 @@ export function SparklesPreview() {
             In the symphony of pixels and code, I orchestrate seamless and
             captivating web experiences
           </p>
-          <button className="group relative z-[1000] transition-transform duration-300 rounded-2xl px-3 py-2 border w-fit cursor-pointer flex items-center gap-2">
+          <button
+            onClick={() => navigate("/contact-me")}
+            className="group relative z-[1000] transition-transform duration-300 rounded-2xl px-3 py-2 border w-fit cursor-pointer flex items-center gap-2"
+          >
             <span>Get In Touch</span>
 
             <span className="-rotate-45 group-hover:rotate-0 transition-transform duration-300">
