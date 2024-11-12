@@ -5,7 +5,7 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 
 export function SparklesPreview() {
   return (
-    <div className="h-[40rem]y h-fit relative w-full bg-black flex flex-col items-centery md:pl-[14rem] justify-center overflow-hidden rounded-md">
+    <div className="h-[40rem]y h-fit relative w-full bg-black flex flex-col items-centery md:pl-[14rem] justify-center overflow-hidden">
       <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
           id="tsparticlesfullpage"
