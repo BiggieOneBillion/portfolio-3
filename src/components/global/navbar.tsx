@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
-import { FaCircleArrowRight } from "react-icons/fa6";
+// import { FaCircleArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
