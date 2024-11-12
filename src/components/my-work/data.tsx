@@ -61,7 +61,7 @@ type dataType = (
 
 export const workData: dataType = [
   {
-    imgUrl: "/public/movie.png",
+    imgUrl: "/movies2.png",
     title: "Movie App (React Js + External API)",
     description:
       "Shows recent movies plus movies from different genres, and their trailers",
@@ -95,7 +95,7 @@ export const workData: dataType = [
     },
   },
   {
-    imgUrl: "/public/ecommerce.png",
+    imgUrl: "/ecommerce.png",
     title: "Ecommerce Store (React Js + External API)",
     description:
       "Ecommerce store for cloths and other items for sale, React Js is used for the Front-end and it communicates with an external api to get the products and also uses STRIPE to handle payment and SupaBase to handle users details..",
@@ -137,7 +137,7 @@ export const workData: dataType = [
     },
   },
   {
-    imgUrl: "/public/logistics.png",
+    imgUrl: "/logistics1.png",
     title: "Logistics Car Hire (React Js + SuparBase)",
     description:
       "A website for hiring luxury vehicles. Where luxury car owners meet client that want to rent",
@@ -178,7 +178,7 @@ export const workData: dataType = [
 
 export const utilities: dataType = [
   {
-    imgUrl: "/public/market-list.png",
+    imgUrl: "/market-list.png",
     title: "MarketList App (Next Js + MongoDB for saving data)",
     description:
       "As part of my goal of financial management, i found out that a large chunk of my money was going to shopping at my local groceries store, so i wanted to monitor my spending and what items i buy the most, so as i techie i decided to build a MarketList App that helps me do that. Still in Progress. This is V1, V2 would be out soon with more features",
@@ -265,7 +265,7 @@ export const utilities: dataType = [
 
 export const backend: dataType = [
   {
-    imgUrl: "/public/bE.jpg",
+    imgUrl: "/bE.jpg",
     title: "Ecommerce Backend (NodeJs + ExpressJs)",
     description:
       "A Node / ExpressJs backend for an ecommerce website, I implemented user authentication and authorization using JWT and  MongoDB as database, I also used Cloudinary for the storing assets like images and implemented a global error management system to handle errors and exceptions.",
@@ -293,7 +293,7 @@ export const backend: dataType = [
     },
   },
   {
-    imgUrl: "/public/bE.jpg",
+    imgUrl: "/bE.jpg",
     title: "Iregistration Backend ( Nest Js + MongoDB)",
     description:
       "The Nest Js backend for the Iresgistartion wwebsite - built using nest js and mongodb as the database",
