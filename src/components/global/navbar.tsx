@@ -32,7 +32,7 @@ const Navbar = () => {
               to={"/contact-me"}
               className="px-3 py-2 rounded-xl bg-whitey border border-transparent hover:border-white hover:bg-zinc-200y transition-colors duration-300"
             >
-              <a href="#">Contact Me</a>
+              Contact Me
             </Link>
           </ul>
         </nav>
@@ -55,17 +55,21 @@ const Navbar = () => {
               </span>
               {/* side navigation */}
               <ul className="space-y-8">
-                <li className="text-lg text-right">About Me</li>
-                <li className="text-lg text-right">Work</li>
-                <li className="text-lg text-right">Contact Me</li>
+                <li className="text-lg text-right">
+                  <Link to={"/works"}>My Projects</Link>
+                </li>
+                {/* <li className="text-lg text-right">Work</li> */}
+                <li className="text-lg text-right">
+                  <Link to={"/contact-me"}>Contact Me</Link>
+                </li>
               </ul>
-              <button className="group relative z-[1000] transition-transform duration-300 rounded-2xl px-3 py-2 border w-fit cursor-pointer flex items-center gap-2">
+              {/* <button className="group relative z-[1000] transition-transform duration-300 rounded-2xl px-3 py-2 border w-fit cursor-pointer flex items-center gap-2">
                 <span>Get In Touch</span>
 
                 <span className="-rotate-45 group-hover:rotate-0 transition-transform duration-300">
                   <FaCircleArrowRight />
                 </span>
-              </button>
+              </button> */}
             </div>
           )}
         </nav>
