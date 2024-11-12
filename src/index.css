@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .earth {
+  background: radial-gradient(circle at 30% 30%, #000, #0000004b);
+  perspective-origin: 0%;
+  perspective-origin: 500% 200%;
+  perspective: 5.5cm;
+  transform-style: preserve-3d;
+  transform: rotate3d(80deg);
+  transform: perspective(1000px);
+} */
+/* 
+.earth p {
+  transform: translateZ(550px);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 5rem;
+}
+
+.earth p:nth-child(1) {
+  transform: rotateY(90deg);
+}
+
+.earth p:nth-child(2) {
+  transform: rotateY(120deg);
+}
+
+.earth p:nth-child(3) {
+  transform: rotateY(270deg);
+} */
