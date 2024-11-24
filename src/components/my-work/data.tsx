@@ -90,8 +90,8 @@ export const workData: dataType = [
       },
     ],
     links: {
-      github: "",
-      website: "",
+      github: "https://github.com/ray-BADA-1994/movieTv",
+      website: "https://movie-tv-kappa.vercel.app/",
     },
   },
   {
@@ -132,8 +132,8 @@ export const workData: dataType = [
       },
     ],
     links: {
-      github: "",
-      website: "",
+      github: "https://github.com/ray-BADA-1994/raystore",
+      website: "https://raystore-sandy.vercel.app/",
     },
   },
   {
@@ -170,8 +170,8 @@ export const workData: dataType = [
       },
     ],
     links: {
-      github: "",
-      website: "",
+      github: "https://github.com/BiggieOneBillion/cia-luxury-logistics",
+      website: "https://luxury-logistics.vercel.app",
     },
   },
 ];
@@ -208,8 +208,8 @@ export const utilities: dataType = [
       },
     ],
     links: {
-      github: "",
-      website: "",
+      github: "https://github.com/BiggieOneBillion/MarketListNextJs",
+      website: "market-list-next-js.vercel.app",
     },
   },
   {
@@ -258,6 +258,22 @@ export const utilities: dataType = [
     ],
     links: {
       github: "",
+      website: "",
+    },
+  },
+  {
+    imgUrl: "/study-timer.png",
+    title: "Study Timer (React Js + Headless UI)",
+    description:
+      "This project is a study timer to help improve concentration, i did it as a result of my need to focus while reading. It is built using react js with typescript no frameworks as it just a simple app",
+    techStack: [
+      {
+        tech: "React",
+        icon: <FaReact color="#61DAFB" />,
+      },
+    ],
+    links: {
+      github: "https://github.com/BiggieOneBillion/study-timer",
       website: "",
     },
   },

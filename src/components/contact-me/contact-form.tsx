@@ -1,6 +1,7 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { contactFormSchema } from "./validation";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { sendEmail } from "../../lib/utils";
 
 type formData = {
   name: string;
@@ -13,12 +14,18 @@ const ContactForm = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<formData>({
     resolver: zodResolver(contactFormSchema),
   });
 
   const OnSubmit: SubmitHandler<formData> = (value) => {
-    console.log(value);
+    sendEmail(
+      "chukwuchinwendu@gmail.com",
+      "Inquiry",
+      `My ${value.name}, ${value.message} `
+    );
+    reset();
   };
   return (
     <section className="text-gray-600 body-font relative">
@@ -33,11 +40,11 @@ const ContactForm = () => {
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <form
-            className="flex flex-wrap -m-2"
+            className="flex flex-wrap -m-2 max-w-6xl"
             onSubmit={handleSubmit(OnSubmit)}
           >
             <div className="p-2 w-1/2">
-              <div className="relative">
+              <div className="relative flex flex-col gap-2">
                 <label
                   htmlFor="name"
                   className="leading-7 text-sm text-gray-600 "
@@ -51,14 +58,14 @@ const ContactForm = () => {
                   {...register("name")}
                 />
                 {errors.name && (
-                  <span className="text-xs font-medium text-red-500 inline-block w-[200px] text-wrap">
+                  <span className="text-xs font-medium text-red-500 inline-block w-[200px]y text-wrap">
                     {errors.name.message}
                   </span>
                 )}
               </div>
             </div>
             <div className="p-2 w-1/2">
-              <div className="relative">
+              <div className="relative flex flex-col gap-2">
                 <label
                   htmlFor="email"
                   className="leading-7 text-sm text-gray-600"
@@ -72,14 +79,14 @@ const ContactForm = () => {
                   {...register("email")}
                 />
                 {errors.email && (
-                  <span className="text-xs font-medium text-red-500 inline-block w-[200px] text-wrap">
+                  <span className="text-xs font-medium text-red-500 inline-block w-[200px]y text-wrap">
                     {errors.email.message}
                   </span>
                 )}
               </div>
             </div>
             <div className="p-2 w-full">
-              <div className="relative">
+              <div className="relative flex flex-col gap-2">
                 <label
                   htmlFor="message"
                   className="leading-7 text-sm text-gray-600"
@@ -92,7 +99,7 @@ const ContactForm = () => {
                   {...register("message")}
                 ></textarea>
                 {errors.message && (
-                  <span className="text-xs font-medium text-red-500 inline-block w-[250px] text-wrap">
+                  <span className="text-xs font-medium text-red-500 inline-block w-[250px]y text-wrap">
                     {errors.message.message}
                   </span>
                 )}
@@ -101,7 +108,7 @@ const ContactForm = () => {
             <div className="p-2 w-full">
               <button
                 type="submit"
-                className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                className="flex mx-auto text-white bg-slate-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
               >
                 Submit
               </button>

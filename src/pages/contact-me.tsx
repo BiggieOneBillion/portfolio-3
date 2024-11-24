@@ -7,7 +7,7 @@ const ContactPage = () => {
     // const {} = useForm()
   return (
     <DotBackground>
-      <section className="h-fit flex items-center justify-center">
+      <section className="h-fit  flex items-center justify-center">
         <ContactForm />
       </section>
     </DotBackground>
