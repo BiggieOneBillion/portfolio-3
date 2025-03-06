@@ -174,30 +174,18 @@ export const workData: dataType = [
       website: "https://luxury-logistics.vercel.app",
     },
   },
-];
-
-export const utilities: dataType = [
   {
-    imgUrl: "/market-list.png",
-    title: "MarketList App (Next Js + MongoDB for saving data)",
+    imgUrl: "/weather-forcast.png",
+    title: "Weather Forecast (React Js)",
     description:
-      "As part of my goal of financial management, i found out that a large chunk of my money was going to shopping at my local groceries store, so i wanted to monitor my spending and what items i buy the most, so as i techie i decided to build a MarketList App that helps me do that. Still in Progress. This is V1, V2 would be out soon with more features",
+      "This project is a weather forecast app that shows the weather for the next 5 days. It is built using react js with typescript no frameworks as it just a simple app",
     techStack: [
       {
-        tech: "Next Js",
-        icon: <TbBrandNextjs color="#fff" />,
+        tech: "React",
+        icon: <FaReact color="#61DAFB" />,
       },
       {
-        tech: "Framer Motion",
-        icon: <PiFramerLogo />,
-      },
-      {
-        tech: "shadcn ui",
-        icon: <SiShadcnui />,
-      },
-      {
-        tech: "MongoDB",
-        icon: <DiMongodb />,
+        tech: "react-icons",
       },
       {
         tech: "axios",
@@ -208,10 +196,143 @@ export const utilities: dataType = [
       },
     ],
     links: {
-      github: "https://github.com/BiggieOneBillion/MarketListNextJs",
-      website: "market-list-next-js.vercel.app",
+      github: "https://github.com/BiggieOneBillion/weather-app",
+      website: "https://weather-app-chuks-projects-bfff9e26.vercel.app/",
     },
   },
+];
+
+export const utilities: dataType = [
+  {
+    imgUrl: "/student-study.png",
+    title: "Student Study (Next Js + Tailwindcss + Shadcn UI)",
+    description:
+      "This project is a student study app that helps students to study more effectively. It is built using next js with typescript and tailwindcss, it uses AI to generate study guides and lessons.",
+    techStack: [
+      {
+        tech: "Next Js",
+        icon: <TbBrandNextjs color="#fff" />,
+      },
+      {
+        tech: "react-hook-form",
+        icon: <SiReacthookform color="#EC5990" />,
+      },
+      {
+        tech: "zod",
+        icon: <SiZod color="#3A7AFE" />,
+      },
+      {
+        tech: "axios",
+        icon: <SiAxios color="#5A29E4" />,
+      },
+      {
+        tech: "shadcn ui",
+        icon: <SiShadcnui />,
+      },
+    ],
+    links: {
+      github: "",
+      website: "https://study-student-tool.vercel.app",
+    },
+  },
+  {
+    imgUrl: "/study-timer.png",
+    title: "Study Timer (React Js + Headless UI)",
+    description:
+      "This project is a study timer to help improve concentration, i did it as a result of my need to focus while reading. It is built using react js with typescript no frameworks as it just a simple app",
+    techStack: [
+      {
+        tech: "React",
+        icon: <FaReact color="#61DAFB" />,
+      },
+    ],
+    links: {
+      github: "https://github.com/BiggieOneBillion/study-timer",
+      website: "",
+    },
+  },
+  {
+    imgUrl: "/react-template.png",
+    title: "React Starter Template ( Nextjs )",
+    description:
+      "I built this project to help my students or anybody learning / using react to be able to start a new project quickly. It is built using nextjs with typescript and tailwindcss",
+    techStack: [
+      {
+        tech: "Next Js",
+        icon: <TbBrandNextjs color="#fff" />,
+      },
+      {
+        tech: "react-hook-form",
+        icon: <SiReacthookform color="#EC5990" />,
+      },
+      {
+        tech: "zod",
+        icon: <SiZod color="#3A7AFE" />,
+      },
+      {
+        tech: "axios",
+        icon: <SiAxios color="#5A29E4" />,
+      },
+    ],
+    links: {
+      github: "https://github.com/BiggieOneBillion/react-starter",
+      website: "https://react-starter-f0c4.onrender.com",
+    },
+  },
+  {
+    imgUrl: "/resume-builder.png",
+    title: "Resume Builder (Next Js)",
+    description:
+      "Want to build a resume but you don't want to spend hours on it? Well this is the app for you. It is a resume builder that helps you build a resume in no time. It is built using react js with typescript and tailwindcss",
+    techStack: [
+      {
+        tech: "Next Js",
+        icon: <TbBrandNextjs color="#fff" />,
+      },
+      {
+        tech: "react-icons",
+      },
+    ],
+    links: {
+      github: "https://github.com/BiggieOneBillion/resume-builder",
+      website: "https://resume-builder-zeta-eight.vercel.app/",
+    },
+  },
+  // {
+  //   imgUrl: "/market-list.png",
+  //   title: "MarketList App (Next Js + MongoDB for saving data)",
+  //   description:
+  //     "As part of my goal of financial management, i found out that a large chunk of my money was going to shopping at my local groceries store, so i wanted to monitor my spending and what items i buy the most, so as i techie i decided to build a MarketList App that helps me do that. Still in Progress. This is V1, V2 would be out soon with more features",
+  //   techStack: [
+  //     {
+  //       tech: "Next Js",
+  //       icon: <TbBrandNextjs color="#fff" />,
+  //     },
+  //     {
+  //       tech: "Framer Motion",
+  //       icon: <PiFramerLogo />,
+  //     },
+  //     {
+  //       tech: "shadcn ui",
+  //       icon: <SiShadcnui />,
+  //     },
+  //     {
+  //       tech: "MongoDB",
+  //       icon: <DiMongodb />,
+  //     },
+  //     {
+  //       tech: "axios",
+  //       icon: <SiAxios color="#5A29E4" />,
+  //     },
+  //     {
+  //       tech: "Tanstack query",
+  //     },
+  //   ],
+  //   links: {
+  //     github: "https://github.com/BiggieOneBillion/MarketListNextJs",
+  //     website: "https://market-list-next-js.vercel.app",
+  //   },
+  // },
   {
     title: "Iregistration (React Js + Nest Js + MongoDB)",
     description:
@@ -258,22 +379,6 @@ export const utilities: dataType = [
     ],
     links: {
       github: "",
-      website: "",
-    },
-  },
-  {
-    imgUrl: "/study-timer.png",
-    title: "Study Timer (React Js + Headless UI)",
-    description:
-      "This project is a study timer to help improve concentration, i did it as a result of my need to focus while reading. It is built using react js with typescript no frameworks as it just a simple app",
-    techStack: [
-      {
-        tech: "React",
-        icon: <FaReact color="#61DAFB" />,
-      },
-    ],
-    links: {
-      github: "https://github.com/BiggieOneBillion/study-timer",
       website: "",
     },
   },
